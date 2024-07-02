@@ -7,7 +7,15 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+
+// Configuración de cors
+const corsOptions = {
+  origin: "https://estoes-challenge.up.railway.app",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: "Content-Type,Authorization",
+};
+
+app.use(cors(corsOptions));
 
 // Swagger
 app.use("/api-docs", serve, setup);
