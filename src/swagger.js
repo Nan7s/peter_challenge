@@ -9,7 +9,7 @@ const swaggerOptions = {
       version: "1.0.0",
       description: "API for managing projects",
     },
-    host: "localhost:3000",
+    host: "estoes-challenge.up.railway.app",
     basePath: "/",
   },
   apis: [path.join(__dirname, "../src/routes/*.js")],
