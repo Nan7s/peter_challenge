@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Configuración de cors
 const corsOptions = {
-  origin: "https://estoes-challenge.up.railway.app",
+  origin: "*",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: "Content-Type,Authorization",
 };
